@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
+  loggedIn = true;
+
   constructor() { }
 
   ngOnInit() { }
