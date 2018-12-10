@@ -1,25 +1,26 @@
 import { Component } from '@angular/core';
 import { NewServiceService } from './new-service.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  template:
-    `<div>
-      <h1>Angular routes</h1>
-      <nav>
-        <a routerLink="">main</a>
-        <a routerLink="/news">news</a>
-        <a routerLink="/price">price</a>
-        <a routerLink="/about">about us</a>
-      </nav>
-      <router-outlet></router-outlet>
-    </div>`,
-  styles: ['a {margin-left: 10px}']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
-  title = 'My Angular Application';
-  constructor(svc: NewServiceService) {
-    svc.consoleText('Hello, World!');
+  userName: string = '';
+  response: any;
+
+  constructor(private http: HttpClient) {
+    //
+  }
+
+  search() {
+    this.http.get('https://api.github.com/users/' + this.userName) // return Observable object – it's stream
+        .subscribe(response => { // subscribe listen stream and define what to do with result
+          this.response = response;
+          console.log(this.response);
+        });
   }
 }
