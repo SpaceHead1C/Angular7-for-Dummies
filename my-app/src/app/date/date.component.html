@@ -1,8 +1,8 @@
-<!-- like a ngIf = expression ? then : else -->
-<ng-template *ngIf="loggedIn; then li; else lo"></ng-template>
-<ng-template #li>
-  Logged in.
-</ng-template>
-<ng-template #lo>
-  Please, login.
-</ng-template>
+<button *ngIf="isCollapsed" (click)="toggleCollapse()">Show</button>
+<button *ngIf="!isCollapsed" (click)="toggleCollapse()">Hide</button>
+<div *ngIf="!isCollapsed">
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+    sunt rem iure pariatur tempore reprehenderit voluptatum, nisi cupiditate
+    ullam repudiandae esse, facilis fugiat exercitationem? Laboriosam vel
+    corrupti voluptatum maiores itaque.</p>
+</div>
