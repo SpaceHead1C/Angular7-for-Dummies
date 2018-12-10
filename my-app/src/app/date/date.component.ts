@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
-  message: string = new Date().toTimeString();
+  message: string;
 
   constructor() {
-    //this.message = 'World';
+    setInterval(() => {
+      this.message = new Date().toLocaleTimeString();
+    }, 1000);
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
 }
