@@ -6,13 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
-  isCollapsed: boolean = true;
-
+  text: string = 'Hello, World!';
+  
   constructor() { }
-
-  toggleCollapse() {
-    this.isCollapsed = !this.isCollapsed;
-  }
 
   ngOnInit() { }
 }
