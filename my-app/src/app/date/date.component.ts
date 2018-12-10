@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
-  items = ['Angular', 'React', 'Vue', 'Boostrap', 'Node.js'];
-  
+  loggedIn = false;
+
   constructor() { }
 
   ngOnInit() { }
