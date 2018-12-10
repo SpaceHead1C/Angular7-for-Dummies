@@ -10,6 +10,8 @@ import { NewsComponent } from './news/news.component';
 import { PriceComponent } from './price/price.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+import { NewServiceService } from './new-service.service'; // import service
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NewServiceService], // register service
   bootstrap: [AppComponent]
 })
 export class AppModule { }
