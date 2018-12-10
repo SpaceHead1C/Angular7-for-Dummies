@@ -1,7 +1,3 @@
-.my {
-    color: red;
-}
-
-.class2 {
-    color: yellow;
+.invisible {
+    display: none;
 }

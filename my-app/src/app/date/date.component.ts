@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
+  visibility: boolean = true;
+
   constructor() { }
+
+  toggle() {
+    this.visibility = !this.visibility;
+  }
 
   ngOnInit() { }
 }

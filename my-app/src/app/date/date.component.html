@@ -1,5 +1,6 @@
-<div [ngStyle]="{'color': 'red'}">
+<div [ngClass]="{invisible: visibility}">
     <h1>Hello, World!</h1>
-    <p [ngStyle]="{'color': 'yellow', 'background-color': 'darkgrey'}">Lorem ipsum dolor sit amet consectetur
+    <p>Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Voluptate, quibusdam.</p>
 </div>
+<button (click)="toggle()">Toggle</button>
