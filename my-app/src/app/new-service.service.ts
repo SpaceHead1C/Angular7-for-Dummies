@@ -4,6 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class NewServiceService {
+  consoleText(arg) {
+    console.log(arg);
+  }
 
   constructor() { }
 }
