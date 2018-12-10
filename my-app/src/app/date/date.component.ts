@@ -8,5 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DateComponent implements OnInit {
   constructor() { }
 
+  myEvent(event) {
+    console.log(event);
+  }
+
   ngOnInit() { }
 }
