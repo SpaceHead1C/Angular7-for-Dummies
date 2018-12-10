@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-price',
-  templateUrl: './price.component.html',
-  styleUrls: ['./price.component.css']
+  template: '<h3>price</h3>'
 })
 export class PriceComponent implements OnInit {
 
