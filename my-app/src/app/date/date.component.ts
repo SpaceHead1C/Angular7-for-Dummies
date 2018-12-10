@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.css']
 })
 export class DateComponent implements OnInit {
+  message: string = new Date().toTimeString();
 
-  constructor() { }
+  constructor() {
+    //this.message = 'World';
+  }
 
   ngOnInit() {
   }
