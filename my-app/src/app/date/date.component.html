@@ -1,4 +1,4 @@
 <div>
-  <h3>Time:</h3>
-  <p *ngFor="let item of items">{{ item }}</p>
+  <h3>Frameworks:</h3>
+  <p *ngFor="let item of items; let i = index">{{i+1}}. {{ item }}</p>
 </div>
